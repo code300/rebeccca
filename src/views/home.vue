@@ -92,6 +92,42 @@
           </li>
         </ul>
       </div>
+      <div class="one">
+        <p class="item">
+          <span class="type">手表</span>
+          <a>
+            <span class="more"
+              >查看更多
+              <span class="arrorRight">>></span>
+            </span>
+          </a>
+        </p>
+        <ul>
+          <li v-for="item in productOne" :key="item.id">
+            <a>
+              <img :src="item.img" alt="" />
+              <p class="title">{{ item.title }}</p>
+              <p class="content">
+                {{ item.content }}
+              </p>
+              <p class="price">{{ item.price }}</p>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li v-for="item in productOne" :key="item.id">
+            <a>
+              <img :src="item.img" alt="" />
+              <p class="title">{{ item.title }}</p>
+              <p class="content">
+                {{ item.content }}
+              </p>
+              <p class="price">{{ item.price }}</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="video"></div>
     </div>
   </div>
 </template>
@@ -367,6 +403,9 @@ export default {
         .more {
           text-align: right;
           font-size: 14px;
+          &:hover {
+            color: #ff6700;
+          }
         }
         .arrorRight {
           padding: 4px;
